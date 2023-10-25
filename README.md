@@ -1,3 +1,5 @@
+![image of the IndieFilms logo from the website.](https://www.figma.com/file/wtpqCfSbysUagq204RGpGG/MyFilms?type=design&node-id=0%3A1&mode=design&t=3GOXPjhR26rFE1bB-1)
+
 ## Inspiration
 
 When I was in high school, I worked at a movie theater. I could watch any film we were showing for free, however, the blockbuster titles never intrigued me. I preferred to go to the local video store and browse the corner with the title, “Independent Films” then join the masses to watch Braveheart in the theater. I knew whichever movie I chose from this section would be exceptional and challenge my worldview and way of thinking.
