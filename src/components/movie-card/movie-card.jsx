@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card, CardGroup, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from'react';
-import { Modal } from 'react-bootstrap';
+import { Col, Figure } from 'react-bootstrap';
+import '../profile-view/profile-view.scss'
 
 
 export const MovieCard = ({movie, token, setUser, user }) => {
@@ -78,7 +79,9 @@ export const MovieCard = ({movie, token, setUser, user }) => {
     }
 
     return (
-            <Card className='h-100'>
+        <CardGroup style={{ width: '100%', height: '100%'}}>
+        <Card sm={12} md={6} lg={3} key={movie.id}>
+           
               <Card.Img variant='top' src={movie.image} />
         <Card.Body>
             <Card.Title>{movie.title}</Card.Title>
@@ -88,18 +91,19 @@ export const MovieCard = ({movie, token, setUser, user }) => {
             </Link>
             
            {!addFavorite ? (
-             <Button variant='primary' onClick={addFavoriteMovie}>
+             <Button className="btn mt-auto"variant='primary' style={{width:'100%'}}onClick={addFavoriteMovie}>
                     Add Fav
                     </Button>             
            ) : (
-            <Button variant='warning' onClick={removeFavoriteMovie}>
+            <Button className="mt-auto"variant='warning' style={{width:'100%'}} onClick={removeFavoriteMovie}>
                 Remove Fav
             </Button>
            )}
           
         </Card.Body>
         </Card>
-       
+        </CardGroup>
+      
         );
      };
 

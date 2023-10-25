@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import MyFilms from '../navigation-bar/indiefilms.svg';
+import './navigation-bar.scss'
 
 
 export const NavigationBar = ({ user, onLoggedOut }) => {

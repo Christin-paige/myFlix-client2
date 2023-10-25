@@ -5,7 +5,7 @@ import { MovieCard } from '../movie-card/movie-card';
 import { AddFavorite} from './favorite-movies/favorite-movies'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Button, Card, Container, CardGroup, Form, Figure } from 'react-bootstrap';
+import { Button, Card, Container, CardGroup, Form, Stack } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../profile-view/profile-view.scss'
 
@@ -103,27 +103,29 @@ console.log(movies, 'here are the movies')
  
 
     return (
-      <Container >
-       <Row lg={1} xs={12}> 
-        <Col className='d-flex'>
-          
-            <Card className='flex-fill'>
+    <Container className='container'>
+     <Row>
+      <Col  xs={12} sm={8}  style={{width: '500px'}}>
+            <Card className='mt-2'style={{width: '500px'}}>
             <Card.Body>
               <Card.Title className='font-link'>My Profile</Card.Title>
                 <Card.Text>Name: {user.Name}</Card.Text>
                 <Card.Text>Email: {user.Email}</Card.Text>
                 </Card.Body>
-                </Card>
+            </Card>
+       </Col>
+              
                
-            </Col>
-              <Col xs={12} sm={8}>
-                <Card className='update'>
+         <Col xs={12} sm={8} style={{width: '500px'}}>
+              <Form>
+                <Card className='mt-2' style={{width: '500px'}}>
                   <Card.Body>
-                <Card.Title className='font-link'>Want to Change Some Info?</Card.Title>
+                    <Card.Title className='font-link'>Want to Change Some Info?</Card.Title>
                  <Form onSubmit={handleUpdate}>
                   <Form.Group>
                     <Form.Label>New Username:
                       <Form.Control
+                        style={{ width: '400px'}}
                         type= 'text'
                         value={username}
                         onChange={(e) => {
@@ -137,6 +139,7 @@ console.log(movies, 'here are the movies')
                   <Form.Group  controlId='UpdatePassword'>
                   <Form.Label>New Password:
                       <Form.Control 
+                      style={{ width: '400px'}}
                       type= 'password'
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
@@ -148,24 +151,28 @@ console.log(movies, 'here are the movies')
                   <Form.Group className='mb-5' controlId='UpdateEmail'>
                   <Form.Label>New Email:
             <Form.Control
+            style={{ width: '400px'}}
             type= 'email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             />
               </Form.Label>
               </Form.Group>
-            
+             
               <Button 
                  variant='primary' 
+                 size='sm'
                  type='submit' 
                  onClick={handleUpdate}
                  className='text-white'
-                
+                 
                  >
                       Update
               </Button> 
+            
               </Form>
               <Link to='/login'>
+
               <Button 
                 variant='danger'
                 size = 'sm'
@@ -175,25 +182,25 @@ console.log(movies, 'here are the movies')
                   Delete Account
                   </Button>
                 </Link> 
+               
                 </Card.Body>
                 </Card>
-              
-                </Col>
-                </Row>
-            
+              </Form>
+          </Col>
+        </Row>
 
-      
-    
-      <Row>
-        <Col className='font-link'>
+
+        <Col className='font-link ms-auto' style={{width:'100%'}}>
          <h4>Favorite Movies</h4>
         </Col>
-        </Row>
-        <Row xs={2} md={4} lg={6}>
+      
+        <CardGroup>
+       
+        
          {result.map((movie) => (
-            <Col xs={12} md={6} lg={4} className='fav-movies' key={movie.id} >
+            <Col xs={12} md={9} lg={4} className='m-2' key={movie.id} >
              
-             <MovieCard 
+             <MovieCard
                 movie = {movie}
                 token={token}
                 setUser={setUser}
@@ -204,10 +211,9 @@ console.log(movies, 'here are the movies')
 
           </Col>
          ))}
-        </Row>
-        
+          
+        </CardGroup>
+      
        
-              
-
  </Container>
     )}
