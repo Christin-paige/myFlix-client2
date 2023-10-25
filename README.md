@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-![image of the IndieFilms logo from the website.](https://www.figma.com/file/wtpqCfSbysUagq204RGpGG/MyFilms?type=design&node-id=0%3A1&mode=design&t=3GOXPjhR26rFE1bB-1)
-=======
 
->>>>>>> b1f3937c49d753a559086daf055e798de32785cf
+![image of the IndieFilms logo from the website.](https://www.figma.com/file/wtpqCfSbysUagq204RGpGG/MyFilms?type=design&node-id=0%3A1&mode=design&t=3GOXPjhR26rFE1bB-1)
+
+
 
 ## Inspiration
 
