@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Card, CardGroup, Container} from 'react-bootstrap';
+import { Button, Card, CardGroup} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from'react';
-import { Col, Figure } from 'react-bootstrap';
 import '../profile-view/profile-view.scss'
 
 
@@ -49,11 +48,9 @@ export const MovieCard = ({movie, token, setUser, user }) => {
   
 
     const removeFavoriteMovie = () => {
-        console.log('called removeFavoriteMovie')
         fetch(`https://myfilms-2457a2cd41b6.herokuapp.com/users/${user.Name}/movies/${movie.id}`,{
             method: 'DELETE',
             headers: {
-              //'Content-Type': 'application/json',
                Authorization: `Bearer ${token}`,
             },
            
@@ -80,28 +77,28 @@ export const MovieCard = ({movie, token, setUser, user }) => {
 
     return (
         <CardGroup style={{ width: '100%', height: '100%'}}>
-        <Card sm={12} md={6} lg={3} key={movie.id}>
+           <Card sm={12} md={6} lg={3} key={movie.id}>
            
               <Card.Img variant='top' src={movie.image} />
-        <Card.Body>
-            <Card.Title>{movie.title}</Card.Title>
-            <Link to={`/movies/${encodeURIComponent(movie.id)}`}>
+                <Card.Body>
+                  <Card.Title>{movie.title}</Card.Title>
+                    <Link to={`/movies/${encodeURIComponent(movie.id)}`}>
 
-                <Button variant='link'>Open</Button> 
-            </Link>
+                       <Button variant='link'>Open</Button> 
+                    </Link>
             
-           {!addFavorite ? (
-             <Button className="btn mt-auto"variant='primary' style={{width:'100%'}}onClick={addFavoriteMovie}>
-                    Add Fav
-                    </Button>             
-           ) : (
-            <Button className="mt-auto"variant='warning' style={{width:'100%'}} onClick={removeFavoriteMovie}>
-                Remove Fav
-            </Button>
-           )}
+                {!addFavorite ? (
+                      <Button className="btn mt-auto"variant='primary' style={{width:'100%'}}onClick={addFavoriteMovie}>
+                         Add Fav
+                      </Button>             
+                ) : (
+                      <Button className="mt-auto"variant='warning' style={{width:'100%'}} onClick={removeFavoriteMovie}>
+                          Remove Fav
+                      </Button>
+                )}
           
-        </Card.Body>
-        </Card>
+             </Card.Body>
+           </Card>
         </CardGroup>
       
         );

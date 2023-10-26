@@ -9,7 +9,6 @@ import './navigation-bar.scss'
 
 export const NavigationBar = ({ user, onLoggedOut }) => {
 
-  
 
   return (
     <Navbar  collapseOnSelect expand="lg"className="bg-body-tertiary" >

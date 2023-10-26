@@ -133,11 +133,11 @@ console.log(movies, 'here are the movies')
                         }}
                         placeholder={user.Name}                       
                       />
-                      </Form.Label>
+                    </Form.Label>
                   </Form.Group>
         
                   <Form.Group  controlId='UpdatePassword'>
-                  <Form.Label>New Password:
+                   <Form.Label>New Password:
                       <Form.Control 
                       style={{ width: '400px'}}
                       type= 'password'
@@ -145,19 +145,19 @@ console.log(movies, 'here are the movies')
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder='*****'
                        />
-                  </Form.Label>
+                   </Form.Label>
                   </Form.Group>
 
                   <Form.Group className='mb-5' controlId='UpdateEmail'>
-                  <Form.Label>New Email:
-            <Form.Control
-            style={{ width: '400px'}}
-            type= 'email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            />
-              </Form.Label>
-              </Form.Group>
+                   <Form.Label>New Email:
+                     <Form.Control
+                      style={{ width: '400px'}}
+                      type= 'email'
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                   </Form.Label>
+                  </Form.Group>
              
               <Button 
                  variant='primary' 
@@ -171,7 +171,7 @@ console.log(movies, 'here are the movies')
               </Button> 
             
               </Form>
-              <Link to='/login'>
+           <Link to='/login'>
 
               <Button 
                 variant='danger'
@@ -180,18 +180,18 @@ console.log(movies, 'here are the movies')
                 className='text-white' 
                 >
                   Delete Account
-                  </Button>
-                </Link> 
+              </Button>
+            </Link> 
                
-                </Card.Body>
-                </Card>
-              </Form>
+                   </Card.Body>
+                 </Card>
+               </Form>
           </Col>
         </Row>
 
 
         <Col className='font-link ms-auto' style={{width:'100%'}}>
-         <h4>Favorite Movies</h4>
+           <h4>Favorite Movies</h4>
         </Col>
       
         <CardGroup>
