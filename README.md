@@ -1,11 +1,8 @@
-
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src='https://www.figma.com/file/wtpqCfSbysUagq204RGpGG/MyFilms?type=design&node-id=0%3A1&mode=design&t=EwQRxWJcFQZhIbzq-1' alt='project logo'/>
+  <img src="./indiefilms.svg"alt='project logo'/>
 </div>
-
-
 
 ## Inspiration
 
