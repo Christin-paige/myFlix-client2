@@ -16,10 +16,10 @@ I learned so much through building my first app using MongoDB, Express, React, a
 
 ## Key Features
 
-A login and signup view
-A main view listing all of the movies, including an image of the movie poster
-A movie view with description, genre, and director of each movie
-A profile view where users can view their personal information, update information, and store their list of favorite movies
+-A login and signup view
+-A main view listing all of the movies, including an image of the movie poster
+-A movie view with description, genre, and director of each movie
+-A profile view where users can view their personal information, update information, and store their list of favorite movies
 
 ### Credits:
 
