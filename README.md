@@ -18,8 +18,6 @@
 </defs>
 </svg>
 
-
-
 ## Inspiration
 
 When I was in high school, I worked at a movie theater. I could watch any film we were showing for free, however, the blockbuster titles never intrigued me. I preferred to go to the local video store and browse the corner with the title, “Independent Films” then join the masses to watch Braveheart in the theater. I knew whichever movie I chose from this section would be exceptional and challenge my worldview and way of thinking.
@@ -35,11 +33,11 @@ I learned so much through building my first app using MongoDB, Express, React, a
 
 ## Key Features
 
--A login and signup view
--A main view listing all of the movies, including an image of the movie poster
--A movie view with description, genre, and director of each movie
--A profile view where users can view their personal information, update information, and store their list of favorite movies
+- A login and signup view.
+- A main view listing all of the movies, including an image of the movie poster.
+- A movie view with description, genre, and director of each movie.
+- A profile view where users can view their personal information, update information, and store their list of favorite movies.
 
 ### Credits:
 
-I want to thank my tutor at CareerFoundry as well as my mentor who provided the guidance needed and her time to show me how to troubleshoot when given a red error message, and reminding me that “The computer will only do what you tell it to do.”
+I want to thank my tutor at [CareerFoundry](https://careerfoundry.com/) as well as my mentor who provided the guidance needed and her time to show me how to troubleshoot when given a red error message, and reminding me that “The computer will only do what you tell it to do.” 
