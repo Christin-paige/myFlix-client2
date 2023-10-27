@@ -23,7 +23,7 @@
 
 ## Inspiration
 
-When I was in high school, I worked at a movie theater. I could watch any film we were showing for free, however, the blockbuster titles never intrigued me. I preferred to go to the local video store and browse the corner with the title, “Independent Films” then join the masses to watch Braveheart in the theater. I knew whichever movie I chose from this section would be exceptional and challenge my worldview and way of thinking.
+When I was in high school, I worked at a movie theater. I could watch any film we were showing for free, however, the blockbuster titles never intrigued me. I preferred to go to the local video store and browse the corner with the title, “Independent Films” than join the masses to watch Braveheart in the theater. I knew whichever movie I chose from this section would be exceptional and challenge my worldview and way of thinking.
 This is how I approached this project to build an SPA (single-page application). Countless movie websites provide a user with every movie ever made. So I decided to build a site to attract the high school me. The one that wanted movies that were made on a budget so the writing and storyline had to sell it, not the A-list actors and expensive special effects. From this, the application was born, “IndieFilms, every film worth watching.”
 
 ## Description
