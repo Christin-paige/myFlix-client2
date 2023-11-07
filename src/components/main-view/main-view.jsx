@@ -179,11 +179,11 @@ export const MainView = () => {
                
                   <SearchBar onSearch={handleSearch} />
                 
-             <Container>{movies.map((movie) => (
+            {movies.map((movie) => (
              
                 <MovieCard key={movie.id} user={user} movie={movie} token={token} setUser={setUser} />
                
-              ))} </Container> 
+              ))} 
               
             </>
           )} 
