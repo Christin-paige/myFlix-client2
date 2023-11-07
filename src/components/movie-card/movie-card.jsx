@@ -76,7 +76,7 @@ export const MovieCard = ({movie, token, setUser, user }) => {
     }
 
     return (
-        <CardGroup style={{ width: '100%', height: '100%'}}>
+        <CardGroup>
            <Card sm={12} md={6} lg={3} key={movie.id}>
            
               <Card.Img variant='top' src={movie.image} />
@@ -88,11 +88,11 @@ export const MovieCard = ({movie, token, setUser, user }) => {
                     </Link>
             
                 {!addFavorite ? (
-                      <Button className="btn mt-auto"variant='primary' style={{width:'100%'}}onClick={addFavoriteMovie}>
+                      <Button className="btn mt-auto"variant='primary' onClick={addFavoriteMovie}>
                          Add Fav
                       </Button>             
                 ) : (
-                      <Button className="mt-auto"variant='warning' style={{width:'100%'}} onClick={removeFavoriteMovie}>
+                      <Button className="mt-auto"variant='warning'  onClick={removeFavoriteMovie}>
                           Remove Fav
                       </Button>
                 )}

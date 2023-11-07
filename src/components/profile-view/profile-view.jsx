@@ -105,8 +105,8 @@ console.log(movies, 'here are the movies')
     return (
     <Container className='container'>
      <Row>
-      <Col  xs={12} sm={8}  style={{width: '500px'}}>
-            <Card className='mt-2'style={{width: '500px'}}>
+      <Col  xs={12} sm={8}>
+            <Card className='mt-2'>
             <Card.Body>
               <Card.Title className='font-link'>My Profile</Card.Title>
                 <Card.Text>Name: {user.Name}</Card.Text>
@@ -116,16 +116,16 @@ console.log(movies, 'here are the movies')
        </Col>
               
                
-         <Col xs={12} sm={8} style={{width: '500px'}}>
+         <Col xs={12} sm={8}>
               <Form>
-                <Card className='mt-2' style={{width: '500px'}}>
+                <Card className='mt-2'>
                   <Card.Body>
                     <Card.Title className='font-link'>Want to Change Some Info?</Card.Title>
                  <Form onSubmit={handleUpdate}>
                   <Form.Group>
                     <Form.Label>New Username:
                       <Form.Control
-                        style={{ width: '400px'}}
+                      
                         type= 'text'
                         value={username}
                         onChange={(e) => {
@@ -139,7 +139,7 @@ console.log(movies, 'here are the movies')
                   <Form.Group  controlId='UpdatePassword'>
                    <Form.Label>New Password:
                       <Form.Control 
-                      style={{ width: '400px'}}
+                     
                       type= 'password'
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
@@ -148,10 +148,10 @@ console.log(movies, 'here are the movies')
                    </Form.Label>
                   </Form.Group>
 
-                  <Form.Group className='mb-5' controlId='UpdateEmail'>
+                  <Form.Group className='' controlId='UpdateEmail'>
                    <Form.Label>New Email:
                      <Form.Control
-                      style={{ width: '400px'}}
+                     
                       type= 'email'
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -189,11 +189,11 @@ console.log(movies, 'here are the movies')
           </Col>
         </Row>
 
-
-        <Col className='font-link ms-auto' style={{width:'100%'}}>
+      <Row>
+        <Col className='font-link ms-auto'>
            <h4>Favorite Movies</h4>
         </Col>
-      
+        </Row>
         <CardGroup>
        
         

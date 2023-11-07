@@ -175,16 +175,15 @@ export const MainView = () => {
                 <Col>List is empty!</Col>
               ) : (
                 <>
-                <Row>
-                  <Col>
+                
+               
                   <SearchBar onSearch={handleSearch} />
-                  </Col>
-                </Row>
-              {movies.map((movie) => (
-              <Col className='mb-5' key={movie.id} md={3}>
-                <MovieCard user={user} movie={movie} token={token} setUser={setUser} />
-              </Col>
-              ))}
+                
+             <Container>{movies.map((movie) => (
+             
+                <MovieCard key={movie.id} user={user} movie={movie} token={token} setUser={setUser} />
+               
+              ))} </Container> 
               
             </>
           )} 
