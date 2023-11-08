@@ -165,6 +165,7 @@ export const MainView = () => {
            </>
           }         
         />  
+       
         <Route
           path='/'
           element={
@@ -180,16 +181,17 @@ export const MainView = () => {
                   <SearchBar onSearch={handleSearch} />
            
             {movies.map((movie) => (
-             
+             <Col className='mb-5' key={movie.id} md={3}>
                 <MovieCard key={movie.id} user={user} movie={movie} token={token} setUser={setUser} />
-               
+                </Col>
               ))} 
-             
+            
             </>
           )} 
           </>
           }
           />
+          
          </Routes>
        </Row>
       </BrowserRouter>

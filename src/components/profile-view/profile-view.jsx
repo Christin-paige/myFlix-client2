@@ -103,9 +103,9 @@ console.log(movies, 'here are the movies')
  
 
     return (
-    <Container className='container'>
+    <Container className='mb-5' md={3}>
      <Row>
-      <Col  xs={12} sm={8}>
+      <Col  xs={12} sm={8} lg={4}>
             <Card className='mt-2'>
             <Card.Body>
               <Card.Title className='font-link'>My Profile</Card.Title>
@@ -198,7 +198,7 @@ console.log(movies, 'here are the movies')
        
         
          {result.map((movie) => (
-            <Col xs={12} md={9} lg={4} className='m-2' key={movie.id} >
+            <Col xs={12} md={9} lg={3} className='m-2' key={movie.id} >
              
              <MovieCard
                 movie = {movie}

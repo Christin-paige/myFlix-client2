@@ -76,11 +76,11 @@ export const MovieCard = ({movie, token, setUser, user }) => {
     }
 
     return (
-        <CardGroup>
+        <CardGroup className='h-100'>
            <Card sm={12} md={6} lg={3} key={movie.id}>
            
               <Card.Img variant='top' src={movie.image} />
-                <Card.Body>
+                <Card.Body >
                   <Card.Title>{movie.title}</Card.Title>
                     <Link to={`/movies/${encodeURIComponent(movie.id)}`}>
 
